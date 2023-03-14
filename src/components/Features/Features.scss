@@ -1,0 +1,67 @@
+@import "./../../styles/style";
+
+.feature {
+    background-color: $lightGrayishBlue;
+    text-align: center;
+
+    @include breakpoint-up(medium) {
+        text-align: left;
+    }
+
+    &__intro {
+        margin-bottom: 3.75rem;
+
+        @include breakpoint-up(large) {
+            width: 60%;
+
+        }
+    }
+
+    &__grid {
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.875rem;
+        flex-direction: column;
+
+        @include breakpoint-up(medium) {
+            flex-direction: row;
+        }
+    }
+
+    &__item {
+
+        @include breakpoint-up(medium) {
+            flex: 0 0 calc(50% - 1.875rem);
+        }
+
+        @include breakpoint-up(large) {
+            flex: 1;
+        }
+    }
+
+
+    &__icon {
+        margin-bottom: 1.875rem;
+
+        @include breakpoint-up(large) {
+            margin-bottom: 2.75rem;
+        }
+
+    }
+
+    &__title {}
+
+    &__description {
+        font-size: $font-sm;
+        line-height: 1.5rem;
+    }
+
+
+}
+
+.dark {
+    .feature {
+        background-color: $veryDarkGray;
+    }
+}
