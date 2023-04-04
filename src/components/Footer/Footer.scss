@@ -31,7 +31,7 @@
         color: $white;
         transition: color 150ms ease-in-out;
 
-        &:hover {
+        &:hover, &.active {
 
             color: $limeGreen;
 

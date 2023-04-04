@@ -1,0 +1,15 @@
+@import "./../../styles/style";
+
+.btn__source {
+    margin-top: 1rem;
+    width: 2rem;
+
+    svg path {
+       fill: $limeGreen;
+       transition: fill 150ms ease-in-out; 
+    }
+
+    svg:hover path {
+        fill: $brightCyan;
+    }
+}

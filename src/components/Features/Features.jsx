@@ -18,7 +18,7 @@ const Features = () => {
 
           <div className="feature__grid">
             <div className="feature__item">
-              <div className="feature__icon"><img src={iconOnline} /></div>
+              <div className="feature__icon"><img src={iconOnline} alt="Online Banking" /></div>
               <div className="feature__title">
                 <h3>Online Banking</h3>
               </div>
@@ -27,7 +27,7 @@ const Features = () => {
                 wherever you are in the world.</div>
             </div>
             <div className="feature__item">
-              <div className="feature__icon"><img src={iconBudgeting} /></div>
+              <div className="feature__icon"><img src={iconBudgeting} alt="Simple Budgeting" /></div>
               <div className="feature__title">
                 <h3>Simple Budgeting</h3>
               </div>
@@ -36,7 +36,7 @@ const Features = () => {
                 close to hitting your limits.</div>
             </div>
             <div className="feature__item">
-              <div className="feature__icon"><img src={iconOnBoarding} /></div>
+              <div className="feature__icon"><img src={iconOnBoarding} alt="Fast Onboarding" /></div>
               <div className="feature__title">
                 <h3>Fast Onboarding</h3>
               </div>
@@ -45,7 +45,7 @@ const Features = () => {
                 of your finances right away.</div>
             </div>
             <div className="feature__item">
-              <div className="feature__icon"><img src={iconApi} /></div>
+              <div className="feature__icon"><img src={iconApi} alt="Open API" /></div>
               <div className="feature__title">
                 <h3>Open API</h3>
               </div>

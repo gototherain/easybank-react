@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 const BlogItem = (p) => {
 
     const bgImage = {
@@ -5,9 +6,9 @@ const BlogItem = (p) => {
     }
 
     return (
-        <a href="#" className="blog__item">
+        <NavLink to={`/blog/${p.index}`} className="blog__item">
             <div className="blog__image" style={bgImage}>
-
+            
             </div>
             <div className="blog__text">
                 <div className="blog__author">
@@ -21,7 +22,7 @@ const BlogItem = (p) => {
                 </div>
 
             </div>
-        </a>
+        </NavLink>
     );
 }
 

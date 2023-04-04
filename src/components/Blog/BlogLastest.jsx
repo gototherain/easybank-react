@@ -1,10 +1,8 @@
 import "./Blog.scss";
 import BlogItem from "./BlogItem";
-import {blog} from './../../helpers/blogList'
+import {blog} from '../../helpers/blogList'
 
 const BlogLastest = () => {  
-
-    const blogLastestItems = blog.slice(-4);
 
     return ( 
         <section className="blog">
@@ -15,9 +13,9 @@ const BlogLastest = () => {
 
           <div className="blog__grid">
 
-          {blogLastestItems.map((p) => {
+          {blog.slice(0, 4).map((p, index) => {
             return (
-              <BlogItem key={p.id} title={p.title} author={p.author} description={p.description} imagePreview={p.imagePreview}/>
+              <BlogItem key={p.id} index={index} title={p.title} author={p.author} description={p.description} imagePreview={p.imagePreview}/>
             )
           })}
 
